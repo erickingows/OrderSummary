@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+}
+
+#container {
+    background: url(../images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100% 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-container{
+    border-radius: 20px;
+    background-color: hsl(225, 100%, 98%);
+    box-shadow: 5px 5px 15px hsl(225, 31%, 78%);
+    width: 430px;
+}
+
+.card-imagehero img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+/*main text of the card*/
+.card-maintext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 200px;
+}
+
+.card-maintext-title h2{
+    color:hsl(223, 47%, 23%);
+    font-size: 1.8rem;
+    font-weight: 1000;
+}
+
+.card-maintext-paragraph{
+    text-align: center;
+    width: 300px;
+}
+
+.card-maintext-paragraph p{
+    color: hsl(224, 23%, 55%);
+    line-height: 1.7rem;
+}
+/*1stsection end*/
+
+/* plan-details section*/
+.card-planchoose{
+    display: flex;
+    justify-content: center;
+    line-height: 15px;
+    margin-top: 20px;
+}
+
+.card-planchoose .planchoose-content{
+    width: 235px;
+    height: 48px;
+    margin-left: 20px;
+}
+
+.card-planchoose .planchoose-content h4{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-planchoose .planchoose-content p{
+    color:hsl(224, 23%, 55%);
+}
+
+.card-planchoose .planchoose-content .planchoose-link{
+    text-align: right;
+}
+
+.card-planchoose .planchoose-content .planchoose-link a{
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(245, 75%, 52%);
+}
+
+.card-planchoose .planchoose-content .planchoose-link a:hover{
+    text-decoration: none;
+    color: hsl(245, 57%, 62%);
+}
+/*2ndsection end*/
+
+/*button & cancel section*/
+.card-inferior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.card-inferior .payment-button{
+    border-radius: 10px;
+}
+
+.card-inferior .payment-button input{
+    background-color: hsl(245, 75%, 52%);
+    border-style: none;
+    color:hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 370px;
+    height: 55px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0px 15px 20px hsl(245, 61%, 85%);
+}
+
+.card-inferior .payment-button input:hover{
+    background-color: hsl(245, 57%, 62%);
+    cursor: pointer;
+}
+
+.card-inferior .cancel-option a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.card-inferior .cancel-option a:hover{
+    color: hsl(223, 47%, 23%);
+}
+/*3rdsection end*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1440px){
+    
+    #card-container{
+        width: 345px;
+        font-size: 0.9rem;
+    }
+    
+    .payment-button input[type="button"]{
+        width: 290px;
+        font-size: 0.9rem;
+    }
+
+}
